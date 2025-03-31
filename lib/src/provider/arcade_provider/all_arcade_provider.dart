@@ -13,9 +13,10 @@ final arcadeStoreProvider = FutureProvider<Map<int, ArcadeStore>>((ref) async {
   loadedJson.forEach(
     (k, v) {
       try {
-        ArcadeStore.fromJSON(int.parse(k), v);
+        final int id = v.remove("id");
+        ArcadeStore.fromJSON(id, v);
       } catch (e) {
-        logger.e("Error parsing JSON with id $k", error: e);
+        logger.e("Error parsing JSON with doc-id $k", error: e);
       }
     }
   );
@@ -23,13 +24,26 @@ final arcadeStoreProvider = FutureProvider<Map<int, ArcadeStore>>((ref) async {
 });
 
 /// Fetches the arcade list from the backend.
-/// Throws an [Exception] if the data cannot be fetched.
+/// Throws an [Exception] if there's no data.
 Future<Map<dynamic, dynamic>> getArcadeListFromCloud() async {
-  DocumentSnapshot snapshot = await FirebaseFirestore.instance.collection("arcadelist").doc("arcadestorelist").get();
-  Object? data = snapshot.data();
-  if (data != null) {
-    return data as Map<dynamic, dynamic>;
-  } else {
-    throw Exception("Unable to fetch data from the cloud.");
+  QuerySnapshot snapshot = await FirebaseFirestore.instance
+      .collection("arcadelist")
+      .orderBy("id")
+      .get();
+
+  if (snapshot.docs.isEmpty) {
+    throw Exception("No data found");
   }
+
+  Map<dynamic, dynamic> loadedJson = {};
+  for (var doc in snapshot.docs) {
+
+    
+    if (doc.id == "arcadestorelist") { // TODO: remove
+      continue;
+    }
+    
+    loadedJson[doc.id] = doc.data();
+  }
+  return loadedJson;
 }
