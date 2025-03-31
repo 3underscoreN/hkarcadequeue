@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="音G資訊站">
+
+  <!-- Google Sign In -->
+  <meta name="google-signin-client_id" content="905886612460-97ja5f3hh71b6j4tum80q1mr8nj2f2o6.apps.googleusercontent.com">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="音G資訊站">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.ico"/>
+
+  <!-- CSS styles for loading ring -->
+  <style>
+    :root {
+        --final-background-color: #f7fbf5;
+    }
+
+    body {
+        background-color: var(--final-background-color);
+    }
+
+    .loading-container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+    }
+    
+    .ring {
+        border-radius: 50%;
+        width: 100px !important;
+        height: 100px !important;
+        background: conic-gradient(
+        rgba(242, 242, 242, 0.7) 0% 6.25%,
+        rgba(179, 179, 179, 0.7) 6.25% 12.5%,
+        rgba(242, 242, 242, 0.7) 12.5% 18.75%,
+        rgba(179, 179, 179, 0.7) 18.75% 25%,
+        rgba(242, 242, 242, 0.7) 25% 31.25%,
+        rgba(179, 179, 179, 0.7) 31.25% 37.5%,
+        rgba(242, 242, 242, 0.7) 37.5% 43.75%,
+        rgba(179, 179, 179, 0.7) 43.75% 50%,
+        rgba(242, 242, 242, 0.7) 50% 56.25%,
+        rgba(179, 179, 179, 0.7) 56.25% 62.5%,
+        rgba(242, 242, 242, 0.7) 62.5% 68.75%,
+        rgba(179, 179, 179, 0.7) 68.75% 75%,
+        rgba(242, 242, 242, 0.7) 75% 81.25%,
+        rgba(179, 179, 179, 0.7) 81.25% 87.5%,
+        rgba(242, 242, 242, 0.7) 87.5% 93.75%,
+        rgba(179, 179, 179, 0.7) 93.75% 100%
+        );
+        transform: rotate(-11.25deg);
+        animation: spin 3s linear infinite;
+        -webkit-animation: spin 3s linear infinite;
+    }
+    
+    .ring::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-radius: 50%;
+        background: var(--final-background-color);
+        width: 75%;
+        height: 75%;
+        transform: translate(-50%, -50%);
+    }
+
+    @-webkit-keyframes spin {
+        0% {
+        -webkit-transform: rotate(-11.25deg);
+        }
+        100% {
+        -webkit-transform: rotate(348.75deg);
+        }
+    }
+
+    @keyframes spin {
+        0% {
+        transform: rotate(-11.25deg);
+        }
+        100% {
+        transform: rotate(348.75deg);
+        }
+    }
+  </style>
+  <!--  Load theme setting prior to flutter startup 
+        to avoid blinding user's eyes. -->
+  <script>
+    function loadThemeSettings() {
+        const body = document.body; // To modify the body styles later
+
+        const theme = localStorage.getItem("flutter.adaptive_theme_preferences");
+        
+        if (theme) { // User has a theme, change background to match
+            const themeBody = JSON.parse(JSON.parse(theme));
+            const themeMode = themeBody.theme_mode;
+            switch (themeMode) {
+                case 0: // light
+                    return;
+                case 1: // dark
+                    document.documentElement.style.setProperty('--final-background-color', '#101512'); 
+                    return;
+            }
+        } else { // Using system / not using anything, parse from system instead
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                // User prefers dark mode
+                document.documentElement.style.setProperty('--final-background-color', '#101512'); return;
+            }
+        } // Use default idk ah
+    }
+  </script>
+        
+  <title>音G資訊站</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body class="preload-body" onload="loadThemeSettings()">
+
+  <!-- Spinner's Loader -->
+  <div class="loading-container">
+    <div class="ring"></div>
+  </div>
+
+  <!-- Listener to delete loading once flutter stuff is loaded -->
+   <script>
+        window.addEventListener("flutter-first-frame", function() {
+        document.getElementsByClassName("loading-container")[0].style.display = "none";
+        });
+   </script>
+
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>

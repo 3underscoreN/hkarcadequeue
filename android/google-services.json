@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "905886612460",
+    "project_id": "hkarcadequeue",
+    "storage_bucket": "hkarcadequeue.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905886612460:android:6616c28a38e3a9db621ec9",
+        "android_client_info": {
+          "package_name": "com.threen.hkarcadequeue"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "905886612460-vp2ruiehkcvsft9qvk7ms8h9rv3megmt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.threen.hkarcadequeue",
+            "certificate_hash": "882f8bc4a9b7a6335d47e8424917689922a2acbd"
+          }
+        },
+        {
+          "client_id": "905886612460-97ja5f3hh71b6j4tum80q1mr8nj2f2o6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPPjmRnKEpkf1Qt2CZNwv_4tTgJywoIqo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "905886612460-97ja5f3hh71b6j4tum80q1mr8nj2f2o6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "905886612460-cu4jgb8ug8skjitmfq3cnhk6ju4g6dam.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.threen.hkarcadequeue"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,172 @@
+{
+    "102": {
+        "name_chi": "西灣河 遊戲機中心",
+        "name_eng": "Sai Wan Ho Game Centre",
+        "address_chi": "西灣河筲箕灣道57-87號太安樓地下",
+        "address_eng": "G/F, 57-87 Tai On Building, Shau Kei Wan Road, Sai Wan Ho",
+        "abbv_chi": "太安樓",
+        "smoke": "unknown",
+        "maimai_amount": 2,
+        "chunithm_amount": -1
+    },
+    "103": {
+        "name_chi": "香港仔 珍寶遊戲機中心",
+        "name_eng": "Aberdeen Jumbo Game Centre",
+        "address_chi": "香港仔香港仔舊大街82號地庫",
+        "address_eng": "B/F, 82 Old Main Street Aberdeen, Aberdeen",
+        "abbv_chi": "珍寶",
+        "smoke": "unknown",
+        "maimai_amount": 1,
+        "chunithm_amount": 2
+    },
+    "201": {
+        "name_chi": "佐敦 GameZone",
+        "name_eng": "Jordan GameZone",
+        "address_chi": "油麻地甘肅街24號",
+        "address_eng": "24 Kansu Street, Yau Ma Tei",
+        "abbv_chi": "佐敦gz",
+        "smoke": "heavy",
+        "maimai_amount": 2,
+        "chunithm_amount": 0
+    },
+    "202": {
+        "name_chi": "旺角 新之城GameZone",
+        "name_eng": "Mong Kok New Town Mall GameZone",
+        "address_chi": "旺角彌敦道688號新之城廣場地庫",
+        "address_eng": "B/F, Mong Kok New Town Mall, 688 Nathan Road, Mong Kok",
+        "abbv_chi": "新之",
+        "smoke": "light",
+        "maimai_amount": 16,
+        "chunithm_amount": 4
+    },
+    "203": {
+        "name_chi": "旺角 Smart Game",
+        "name_eng": "Mong Kok Smart Game",
+        "address_chi": "旺角豉油街60號一樓及二樓",
+        "address_eng": "1/F & 2/F, 60 Soy Street, Mong Kok",
+        "abbv_chi": "sg 遊機戲",
+        "smoke": "light",
+        "maimai_amount": 4,
+        "chunithm_amount": 4
+    },
+    "204": {
+        "name_chi": "旺角 金雞遊戲機",
+        "name_eng": "Mong Kok Golden Era Game Centre",
+        "address_chi": "旺角洗衣街39-55號金雞廣場二樓",
+        "address_eng": "2/F, Golden Era Plaza, 39-55 Sai Yee Street, Mong Kok",
+        "abbv_chi": "金雞",
+        "smoke": "heavy",
+        "maimai_amount": 4,
+        "chunithm_amount": 3
+    },
+    "205": {
+        "name_chi": "深水埗 龍威娛樂遊戲機中心",
+        "name_eng": "Shum Shui Po Super King Amusement Game Centre",
+        "address_chi": "深水埗元州街290-296號西岸國際大廈地庫",
+        "address_eng": "B/F, West Coast International Building, 290-296 Un Chau Street, Shum Shui Po",
+        "abbv_chi": "龍威",
+        "smoke": "heavy",
+        "maimai_amount": 5,
+        "chunithm_amount": 4
+    },
+    "206": {
+        "name_chi": "深水埗 電子廣場遊戲機",
+        "name_eng": "Shum Shui Po Electronic Square Game Centre",
+        "address_chi": "深水埗福華街130號地下及閣樓",
+        "address_eng": "M/F & G/F, 130 Fuk Wa Street, Shum Shui Po",
+        "abbv_chi": "電子",
+        "smoke": "unknown",
+        "maimai_amount": 1,
+        "chunithm_amount": 0
+    },
+    "207": {
+        "name_chi": "鑽石山 荷里活GameZone",
+        "name_eng": "Diamond Hill Hollywood GameZone",
+        "address_chi": "鑽石山龍蟠街三號荷里活廣場三樓383A號鋪",
+        "address_eng": "383A, 3/F, Plaza Hollywood, 3 Lung Poon Street, Diamond Hill",
+        "abbv_chi": "鑽荷",
+        "smoke": "none",
+        "maimai_amount": 12,
+        "chunithm_amount": 4
+    },
+    "208": {
+        "name_chi": "觀塘 觀塘廣場GameZone",
+        "name_eng": "Kwun Tong Kwun Tong Plaza GameZone",
+        "address_chi": "觀塘開源道68號觀塘廣場1樓117-121",
+        "address_eng": "117-121, 1/F, Kwun Tong Plaza, 68 Hoi Yuen Road, Kwun Tong",
+        "abbv_chi": "觀廣",
+        "smoke": "unknown",
+        "maimai_amount": 6,
+        "chunithm_amount": 2
+    },
+    "209": {
+        "name_chi": "觀塘 168遊戲機中心",
+        "name_eng": "Kwun Tong 168 Game Centre",
+        "address_chi": "觀塘牛頭角道300-302號裕民中心地下54-58號鋪",
+        "address_eng": "54-58, G/F, Yue Man Shopping Centre, 300-302 Ngau Tau Kok Road, Kwun Tong",
+        "abbv_chi": "168",
+        "smoke": "unknown",
+        "maimai_amount": 1,
+        "chunithm_amount": 0
+    },
+    "301": {
+        "name_chi": "葵涌 碧富遊戲機中心",
+        "name_eng": "Kwai Chung Pik Fu Game Centre",
+        "address_chi": "葵涌和宜合道26-30號LG1號舖",
+        "address_eng": "LG1, 26-30 Wo Yi Hop Road, Kwai Chung",
+        "abbv_chi": "碧富",
+        "smoke": "unknown",
+        "maimai_amount": 2,
+        "chunithm_amount": -1
+    },
+    "302": {
+        "name_chi": "荃灣 金星遊戲機中心",
+        "name_eng": "Tsuen Wan Gold Star Game Centre",
+        "address_chi": "荃灣青山公路264號南豐中心E座三樓303室",
+        "address_eng": "303, 3/F, Wing E, Nan Fung Centre, 264 Castle Peak Road, Tsuen Wan",
+        "abbv_chi": "金星",
+        "smoke": "light",
+        "maimai_amount": 14,
+        "chunithm_amount": 2
+    },
+    "303": {
+        "name_chi": "天水圍 活力城遊戲機中心",
+        "name_eng": "Tin Shui Wai Power City Amusement Centre",
+        "address_chi": "天水圍天恩路18號嘉湖銀座一期地下G68-72號舖",
+        "address_eng": "G68-72, G/F, Kingswood Ginza Phase 1, 18 Tin Yan Road, Tin Shui Wai",
+        "abbv_chi": "pc",
+        "smoke": "none",
+        "maimai_amount": 5,
+        "chunithm_amount": 2
+    },
+    "304": {
+        "name_chi": "屯門 天天遊戲機中心",
+        "name_eng": "Tuen Mun Daily Game Centre",
+        "address_chi": "屯門青柏徑5號四寶大廈B舖",
+        "address_eng": "Shop B, Sai Po Building, 5 Tsing Pak Path, Tuen Mun",
+        "abbv_chi": "天天",
+        "smoke": "unknown",
+        "maimai_amount": 1,
+        "chunithm_amount": 0
+    },
+    "305": {
+        "name_chi": "沙田 沙龍遊戲機中心",
+        "name_eng": "Sha Tin Salem Game Centre",
+        "address_chi": "沙田瀝源街7號沙田娛樂城地下C2號舖",
+        "address_eng": "C2, G/F, Sha Tin Fun City, 7 Lek Yuen Street, Sha Tin",
+        "abbv_chi": "沙龍",
+        "smoke": "none",
+        "maimai_amount": 2,
+        "chunithm_amount": 2
+    },
+    "306": {
+        "name_chi": "大埔 i-Game",
+        "name_eng": "Tai Po i-Game",
+        "address_chi": "大埔安祥路2號李福林體育館地庫",
+        "address_eng": "B/F, Li Fook Lam Indoor Sports Centre, 2 On Cheung Road, Tai Po",
+        "abbv_chi": "igame",
+        "smoke": "heavy",
+        "maimai_amount": 1,
+        "chunithm_amount": 1
+    }
+}
