@@ -93,6 +93,16 @@ class LandingScreen extends StatelessWidget {
                     );
                   },
                 ),
+                LandingPageButton(
+                  text: "私隱聲明",
+                  icon: Icons.feed,
+                  onPressed: () async {
+                    final Uri url = Uri.parse(
+                      'https://hkarcadequeue.web.app/privacy.html',
+                    );
+                    await launchUrl(url, mode: LaunchMode.inAppBrowserView);
+                  },
+                ),
               ],
             ),
             const SizedBox(height: 20),
