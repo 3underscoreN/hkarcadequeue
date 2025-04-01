@@ -37,12 +37,6 @@ Future<Map<dynamic, dynamic>> getArcadeListFromCloud() async {
 
   Map<dynamic, dynamic> loadedJson = {};
   for (var doc in snapshot.docs) {
-
-    
-    if (doc.id == "arcadestorelist") { // TODO: remove
-      continue;
-    }
-    
     loadedJson[doc.id] = doc.data();
   }
   return loadedJson;
