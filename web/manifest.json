@@ -3,8 +3,6 @@
     "short_name": "hkarcadequeue",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#274e13",
-    "theme_color": "#274e13",
     "description": "提供香港音樂街機資訊。",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,

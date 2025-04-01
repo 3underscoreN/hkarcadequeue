@@ -5,10 +5,10 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'package:hkarcadequeue/src/theme/light_theme.dart';
-import 'package:hkarcadequeue/src/theme/dark_theme.dart';
+import 'package:hkarcadequeue/src/view/theme/light_theme.dart';
+import 'package:hkarcadequeue/src/view/theme/dark_theme.dart';
 
-import 'package:hkarcadequeue/src/screen/landing_screen/landing_screen.dart';
+import 'package:hkarcadequeue/src/view/screen/landing_screen/landing_screen.dart';
 
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
