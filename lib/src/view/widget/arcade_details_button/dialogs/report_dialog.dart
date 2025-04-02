@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:cloud_functions/cloud_functions.dart';
 
-import 'package:hkarcadequeue/src/model/utility/possible_crowdness.dart'
+import 'package:hkarcadequeue/src/constant/possible_crowdness.dart'
     show crowdnessChinese;
 
 import 'package:hkarcadequeue/src/model/utility/int2crowdness.dart';

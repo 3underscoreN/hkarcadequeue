@@ -1,4 +1,4 @@
-import "package:hkarcadequeue/src/model/utility/possible_crowdness.dart";
+import "package:hkarcadequeue/src/constant/possible_crowdness.dart";
 
 /// Convert int to crowdness string
 /// 
