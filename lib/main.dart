@@ -46,8 +46,10 @@ void main() async {
     return true;
   };
 
+  const String reCaptchaSiteKey = String.fromEnvironment('RECAPTCHA_SITE_KEY', defaultValue: '');
+
   await FirebaseAppCheck.instance.activate(
-    webProvider: ReCaptchaV3Provider("6LdhegQrAAAAAEI0LN8HIBKJK8Bj5OcDMhkuKPc4"),
+    webProvider: ReCaptchaV3Provider(reCaptchaSiteKey),
     androidProvider: AndroidProvider.playIntegrity
   );
   final AdaptiveThemeMode? savedThemeMode = await AdaptiveTheme.getThemeMode();
