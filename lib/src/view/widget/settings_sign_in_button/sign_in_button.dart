@@ -1,3 +1,21 @@
+/*
+ * hkarcadequeue - An app for providing HK arcade info.
+ * Copyright (C) 2025 CHAN Chung Yuk
+ * 
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
 import 'package:flutter/material.dart';
 
 import 'package:hkarcadequeue/src/model/auth/gauth2firebase.dart';
@@ -5,8 +23,8 @@ import 'package:hkarcadequeue/src/model/auth/gauth2firebase.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
-// import 'package:flutter_signin_button/flutter_signin_button.dart'; // TODO: Uncomment when not using web
-import 'package:google_sign_in_web/web_only.dart'; // TODO: Uncomment when using web
+// import 'package:flutter_signin_button/flutter_signin_button.dart'; // NOTE: This is for non-web
+import 'package:google_sign_in_web/web_only.dart'; // NOTE: This is for web only
 
 class GSignInButton extends StatefulWidget {
   const GSignInButton({super.key});
@@ -148,8 +166,8 @@ class _GSignInButtonState extends State<GSignInButton> {
                 title: const Text('登入'),
                 subtitle: const Text('登入後先至可以睇到同埋回報到機舖狀況'),
               ),
-              renderButton(), // TODO: Uncomment when using web
-              // ClipRRect( // TODO: Uncomment when not using web
+              renderButton(), // NOTE: This is for web
+              // ClipRRect( // NOTE: This is for non-web
               //   borderRadius: BorderRadius.circular(8),
               //   child: SignInButton(
               //     Buttons.Google,
