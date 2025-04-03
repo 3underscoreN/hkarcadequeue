@@ -47,7 +47,7 @@ void main() async {
   };
 
   await FirebaseAppCheck.instance.activate(
-    webProvider: ReCaptchaV3Provider("6LdhegQrAAAAAEI0LN8HIBKJK8Bj5OcDMhkuKPc4"),
+    webProvider: ReCaptchaV3Provider(String.fromEnvironment('RECAPTCHA_SITE_KEY', defaultValue: '')),
     androidProvider: AndroidProvider.playIntegrity
   );
   final AdaptiveThemeMode? savedThemeMode = await AdaptiveTheme.getThemeMode();
